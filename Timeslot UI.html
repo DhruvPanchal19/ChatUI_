@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            color: #444447;
+            font-size: 13px;
+        }
+
+        .patstime-slot-1:hover {
+            background-color: #286abb;
+            color: #fff;
+        }
+
+        .patstimeslots-container {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            display: inline-flex;
+            flex-direction: column;
+            gap: 1rem;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1rem;
+            width: 44ch;
+        }
+
+        .patstime-slot-shift-container {
+            display: inline-flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .patstime-slot-header {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 4px;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .patstime-slot-1 {
+            border: 1px solid #2971cb;
+            border-radius: 6px;
+            padding: 4px 10px;
+            transition: 0.27s linear;
+        }
+
+        .patstime-slot-content {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="patstimeslots-container">
+        <div class="patstime-slot-shift-container">
+            <div class="patstime-slot-header">Morning</div>
+            <div class="patstime-slot-content">
+                <div class="patstime-slot-1">10:00</div>
+                <div class="patstime-slot-1">10:00</div>
+                <div class="patstime-slot-1">10:00</div>
+                <div class="patstime-slot-1">10:00</div>
+            </div>
+        </div>
+        <div class="patstime-slot-shift-container">
+            <div class="patstime-slot-header">Evening</div>
+            <div class="patstime-slot-content">
+                <div class="patstime-slot-1">10:00</div>
+                <div class="patstime-slot-1">10:00</div>
+                <div class="patstime-slot-1">10:00</div>
+                <div class="patstime-slot-1">10:00</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
